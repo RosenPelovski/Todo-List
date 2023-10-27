@@ -1,0 +1,57 @@
+ :root {
+   --textColor: #3d4b59c7;
+   --mainColor: gainsboro;
+   --secondaryColor: #ffffffa6; 
+   --thirdColor: #ffffff;
+   --shadow: 5px 5px 10px 1px lightgray;
+   --lightShadow: 2px 2px 3px 0px var(--textColor);
+   --fontSize: clamp(1rem, 1rem + 0.8vw, 2rem);
+   --transition: all .2s ease-in-out;
+ }
+
+ body {
+   background-color: var(--mainColor);
+   color: var(--textColor);
+   height: 100%;
+   font-size: var(--fontSize);
+   line-height: 1;
+ }
+
+ .App {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: min(80%, 50rem);
+   gap: 1rem;
+   margin-inline: auto;
+ }
+
+ /* ul {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+} */
+
+ input[type="checkbox"] {
+   appearance: none;
+   background-color: var(--thirdColor);
+   margin: 5px;
+   color: var(--textColor);
+   width: 1.1rem;
+   height: 1.1rem;
+   border-radius: 0.1rem; 
+   display: grid;
+   place-content: center;
+   box-shadow: var(--lightShadow);
+ }
+
+ input[type="checkbox"]::before {
+   content: "	\2714"; 
+   transform: scale(0);
+   transition: var(--transition)
+ }
+
+ input[type="checkbox"]:checked::before {
+   transform: scale(1);
+ }
