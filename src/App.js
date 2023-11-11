@@ -5,6 +5,7 @@ import InputField from "./components/InputField/InputField";
 import TodosList from "./components/TodoList/TodoList";
 import { useDispatch } from "react-redux";
 import { addTodo, updateTodos } from "./redux/actions";
+import DarkMode from "./components/DarkMode/DarkMode";
 
 const App = () => {
   const data = useSelector((state) => state.todos);
@@ -19,6 +20,7 @@ const App = () => {
  
   return (
     <div className="App">
+      <DarkMode/>
       <InputField
         placeholder={"Add new task.."}
         buttonLabel="Add"

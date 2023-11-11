@@ -10,23 +10,23 @@
 .todo-input {
   width: 100%;
   padding: 0.5rem 1rem;
-  background: white;
+  background: var(--thirdColor);
   border: none;
   border-radius: 0.3rem 0px 0px 0.3rem;
   font-size: 1.3rem;
-  color: var(--textColor, #4f575f);
+  color: var(--textColor);
   outline: none;
 }
 .todo-input::placeholder {
-  font-size: 1.2rem;;
-  color: var(--textColor, #4f575f);
-  opacity: 0.5;
+  font-size: 1.2rem;
+  color: var(--textColor);
+  opacity: 0.5; 
 }
 
 .input-button {
   border: none;
   font-size: 1rem;
-  background: var(--textColor, #4f575f);
+  background: var(--textColor);
   color: var(--mainColor);
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   font-size: 1rem;
   border: none;
-  background: var(--textColor, #4f575f);
+  background: var(--textColor);
   color: var(--mainColor);
   padding-inline: 12px;
   cursor: pointer;
