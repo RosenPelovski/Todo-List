@@ -3,9 +3,7 @@ import { UPDATE_TODOS, ADD_TODO, REORDER_TODO, DELETE_TODO, EDIT_TODO } from "./
 
 const initialState = {
     todos: [
-        { id: 0, text: "Apple", completed: false },
-        { id: 1, text: "Banana", completed: false },
-        { id: 2, text: "Orange", completed: false },
+        { id: 0, text: "Hello world", completed: false }
     ],
 };
 
